@@ -1,0 +1,127 @@
+﻿<!doctype html> 
+<html> 
+	<head> 
+		<title>Javascript - A Linguagem do Futuro</title> 
+		
+		<link rel="stylesheet" type="text/css" href="media/css/presentation.css" /> 
+		<link rel="stylesheet" type="text/css" href="media/css/prettify.css" /> 
+		<link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css"> 
+		
+		<script src="media/js/jquery-min.js" type="text/javascript"></script> 
+		<script src="media/js/fathom.js" type="text/javascript"></script> 
+		<script src="media/js/prettify.js" type="text/javascript"></script> 
+		<script> 
+			$(document).ready(function(){
+				$('pre').addClass('prettyprint').attr('tabIndex', 0);
+				prettyPrint();
+				
+				var fathom = $('#presentation').Fathom({
+					onActivateSlide: function() {
+						var $slide = $(this);
+						$slide.find('pre:first').focus();
+					}
+				});
+			});
+		</script> 
+	</head>
+	
+	<body> 	 
+		<div id="presentation"> 
+			<div class="slide"> 
+				<h1 id="logo">Javascript</h1>
+				<h1 id="postlogo">A Linguagem do Futuro</h1>
+				<div class="footer">
+					Bruno Merino-Bailón - <a href="http://twitter.com/MerinoBailon">@MerinoBailon</a><br />
+					Rafael Lima Pereira - <a href="http://twitter.com/rlpereira">@rlpereira</a>
+				</div> 
+			</div>
+			
+			<div class="slide img-link"> 
+				<h1>Javascript?</h1> 
+				<ul> 
+					<li>Criada em 1995 pela Netscape</li>
+					<li>Roda em qualquer navegador</li>
+					<li>Independente de plataforma</li>
+					<li>Processamento no cliente</li>
+					<li>Fácil aprendizado</li>
+					<li>Tipagem fraca</li>
+					<li>Descoberta recente do poder da linguagem</li>
+				</ul> 
+			</div>
+			
+			<div class="slide"> 
+				<h1>Por que?</h1> 
+				<h1><br /><img src="media/images/github-js.png" alt="Github + JS" /></h1>
+			</div> 
+			
+			<div class="slide img-power"> 
+				<h1>O poder está com você</h1> 
+				<ul> 
+					<li><a href="http://jquery.com/">jQuery</a> - Write less, do more (propósito geral)</li> 
+					<li><a href="http://script.aculo.us/">script.aculo.us</a> - it's about the user interface, baby! (efeitos interface)</li> 
+					<li><a href="http://developer.yahoo.com/yui/">YUI</a> - Yahoo User Interface Library (testes e desempenho)</li>
+					<li><a href="http://www.prototypejs.org/">prototype</a> - javascript library</li>
+					<li><a href="http://dojotoolkit.org/">dojo toolkit</a> - mobile, interfaces ricas alem de tabelas e gráficos</li>
+				</ul> 
+			</div>
+			
+			<div class="slide">
+				<iframe src="http://www.microjs.com/" width="1200px" height="700px"></iframe>
+			</div>
+			
+			<div class="slide img-king"> 
+				<h1>Para se impressionar...</h1> 
+				<ul> 
+					<li><a href="http://www.chromeexperiments.com/" alt="Chrome Experiments">Chrome Experiments</a></li> 
+					<li><a href="http://www.canvasdemos.com/" alt="Canvas Demos">Canvas Demos</a></li> 
+					<li><a href="http://mrdoob.com/" alt="Mr. Doob">Mr. Doob</a></li>
+					<li><a href="http://www.ro.me" alt="Ro.me">Ro.me</a></li>
+					
+				</ul> 
+			</div>
+			
+			<div class="slide img-zombie">
+				<h1>Vida além do DOM</h1>
+				<ul>
+					<li><b><a href="https://github.com/kripken/emscripten">emscripten</a></b> - LLVM-to-JavaScript compiler</li>
+					<li><b><a href="https://github.com/tobeytailor/gordon">gordon</a></b> - An open source Flash™ runtime</li>
+					<li><b><a href="http://processingjs.org/">ProcessingJS</a></b> - Visualização de dados, animações, etc.</li>
+					<li><b><a href="http://jashkenas.github.com/coffee-script/">Coffee Script</a></b> - Linguagem simplificada que compila JS</li>
+					<li><b><a href="http://nodejs.org/">Node</a></b> - Server-side javascript</li>
+					<li><b><a href="http://www.commonjs.org/">CommonJS</a></b> - Bibliotecas para extender o poder da linguagem</li>
+				</ul>
+			</div>
+			
+								
+			<div class="slide img-eckert">
+				<h1>Estudo de Caso - Bridge</h1>
+				<h1 style="margin-top:100px; color:#000"><span style="font-size:170pt; margin:0 auto">100k</span><br />linhas de javascript puro</h1>
+			</div>
+			
+
+			<div class="slide">
+				<h1>Bridge</h1>
+				<img src="media/images/masterplan.png" />
+			</div>
+			
+			
+			<div class="slide img-space"> 
+				<h1>Para saber mais...</h1> 
+				<ul> 
+					<li>Slides feitos em Javascript - utilizando a <a href="https://github.com/markdalgleish/fathom">Fathom.js</a></li> 
+					<li>Palestra disponível no Github - <a href="https://github.com/bailon/JS-Presentation">https://github.com/bailon/JS-Presentation</a></li> 
+					<li>Imagens retiradas do <a href="http://4walled.org/">4walled</a></li>
+					
+					<li><a href="http://ejohn.org/">John Resig</a> - jQuery / ProcessingJS</li> 
+					<li><a href="http://www.crockford.com/">Douglas Crockford</a> - Javascript - The Good Parts / JSLint</a></li> 
+					<li><a href="http://www.davidflanagan.com/">David Flanagan</a> - The Definitive Guide</a></li> 
+					<li><a href="http://www.nczonline.net/">Nicholas C. Zakas</a> - Yahoo user interface design</li> 
+				</ul> 
+			</div>
+			
+			<div class="slide img-heineken"> 
+				<h1 style="font-size:100pt; color:#FFF"><br />Valeu gurizada!</h1>
+			</div>
+		</div>
+	</body> 
+</html> 
